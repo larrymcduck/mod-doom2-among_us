@@ -5,9 +5,12 @@
   - may run in other applications, only tested with Zandronum
 
 ## Credits
+### Doom 2
+- https://en.wikipedia.org/wiki/Doom_II
+- Any resources (textures, sprites, etc) from the Doom 2 game are owned by id
 ### Among Us
 - Home page: https://innersloth.com/gameAmongUs.php
-- Any textures/graphics/sprites/sounds from the Among Us game are owned by Innersloth
+- Any resources (textures, sprites, etc) from the Among Us game are owned by Innersloth
 
 ### Weapons
 #### Halo M6D Pistol
