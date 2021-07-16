@@ -1,0 +1,10 @@
+gameinfo
+{
+	CursorPic = "amongcur"
+}
+
+map MAP01 "Skeld"
+{
+	levelnum = 1
+    music = "SKELD"
+}

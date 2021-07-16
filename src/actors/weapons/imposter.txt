@@ -1,0 +1,25 @@
+ACTOR Imposter : Weapon
+{
+  +WEAPON.CHEATNOTWEAPON
+  Tag "Imposter"
+  States
+  {
+    Spawn:
+	  TNT1 A -1
+	  Loop
+	Ready:
+	  TNT1 A 1 A_WeaponReady
+	  Loop
+	Select:
+	  TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Raise
+	  TNT1 A 1 A_Raise
+	  Loop
+	Deselect:
+	  TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_Lower
+	  TNT1 A 1 A_Lower
+	  Loop
+	Fire:
+	  TNT1 A 1
+	  Goto Ready
+  }
+}

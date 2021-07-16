@@ -1,0 +1,7 @@
+DEFAULTLISTMENU
+{
+	Font "BigFont", "Untranslated"
+	Selector "IMPKILL2", -32, -5
+	Linespacing 16
+	Font "BigFont", "Red"
+}

@@ -1,0 +1,118 @@
+cameratexture TCAMTEX1 1920 1080 fit 32 24
+cameratexture TCAMTEX2 1920 1080 fit 32 24
+cameratexture TCAMTEX3 1920 1080 fit 32 24
+cameratexture TCAMTEX4 1920 1080 fit 32 24
+
+texture ADMINSW1
+	pic ADMINSW1 tics 6
+	pic ADMINSW2 tics 6
+	pic ADMINSW3 tics 6
+	pic ADMINSW2 tics 6
+
+texture ADMINCA1
+	pic ADMINCA1 tics 8
+	pic ADMINCA2 tics 8
+	pic ADMINCA3 tics 8
+
+texture ADMINCB1
+	pic ADMINCB1 tics 8
+	pic ADMINCB2 tics 8
+	pic ADMINCB3 tics 8
+
+texture ADMINCC1
+	pic ADMINCC1 tics 6
+	pic ADMINCC2 tics 6
+	pic ADMINCC3 tics 6
+	pic ADMINCC2 tics 6
+
+texture ENGGL01
+	pic ENGGL01 tics 3
+	pic ENGGL02 tics 3
+	pic ENGGL03 tics 3
+	pic ENGGL04 tics 3
+	pic ENGGL05 tics 3
+	pic ENGGL06 tics 3
+	pic ENGGL07 tics 3
+	pic ENGGL08 tics 3
+	pic ENGGL09 tics 3
+	pic ENGGL10 tics 3
+	pic ENGGL11 tics 3
+	pic ENGGL12 tics 3
+	pic ENGGL13 tics 3
+	pic ENGGL14 tics 3
+	pic ENGGL15 tics 3
+	pic ENGGL14 tics 3
+	pic ENGGL13 tics 3
+	pic ENGGL12 tics 3
+	pic ENGGL11 tics 3
+	pic ENGGL10 tics 3
+	pic ENGGL09 tics 3
+	pic ENGGL08 tics 3
+	pic ENGGL07 tics 3
+	pic ENGGL06 tics 3
+	pic ENGGL05 tics 3
+	pic ENGGL04 tics 3
+	pic ENGGL03 tics 3
+	pic ENGGL02 tics 3
+
+texture ENGGL10
+	pic ENGGL10 tics 3
+	pic ENGGL09 tics 3
+	pic ENGGL08 tics 3
+	pic ENGGL07 tics 3
+	pic ENGGL06 tics 3
+	pic ENGGL05 tics 3
+	pic ENGGL04 tics 3
+	pic ENGGL03 tics 3
+	pic ENGGL02 tics 3
+	pic ENGGL01 tics 3
+	pic ENGGL02 tics 3
+	pic ENGGL03 tics 3
+	pic ENGGL04 tics 3
+	pic ENGGL05 tics 3
+	pic ENGGL06 tics 3
+	pic ENGGL07 tics 3
+	pic ENGGL08 tics 3
+	pic ENGGL09 tics 3
+	pic ENGGL10 tics 3
+	pic ENGGL11 tics 3
+	pic ENGGL12 tics 3
+	pic ENGGL13 tics 3
+	pic ENGGL14 tics 3
+	pic ENGGL15 tics 3
+	pic ENGGL14 tics 3
+	pic ENGGL13 tics 3
+	pic ENGGL12 tics 3
+	pic ENGGL11 tics 3
+
+texture COMMWAL2
+	pic COMMWAL2 tics 8
+	pic COMMWAL3 tics 8
+	pic COMMWAL4 tics 8
+	pic COMMWAL5 tics 8
+
+texture O2_09_01
+	pic O2_09_01 tics 1
+	pic O2_09_02 tics 1
+	pic O2_09_03 tics 1
+	pic O2_09_04 tics 1
+	pic O2_09_05 tics 1
+	pic O2_09_06 tics 1
+	pic O2_09_07 tics 1
+	pic O2_09_08 tics 1
+	pic O2_09_09 tics 1
+	pic O2_09_10 tics 1
+	pic O2_09_11 tics 1
+	pic O2_09_12 tics 1
+	pic O2_09_13 tics 1
+	pic O2_09_14 tics 1
+	pic O2_09_15 tics 1
+	pic O2_09_16 tics 1
+	pic O2_09_17 tics 1
+	pic O2_09_18 tics 1
+	pic O2_09_19 tics 1
+	pic O2_09_20 tics 1
+	pic O2_09_21 tics 1
+	pic O2_09_22 tics 1
+	pic O2_09_23 tics 1
+	pic O2_09_24 tics 1

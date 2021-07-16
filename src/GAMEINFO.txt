@@ -1,0 +1,1 @@
+IWAD = "DOOM2.WAD"

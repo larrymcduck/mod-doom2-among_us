@@ -1,0 +1,23 @@
+actor AmongUsInvisibility : BlurSphere
+{
+	-VISIBILITYPULSE
+	-INVENTORY.BIGPOWERUP
+	Powerup.Mode Translucent
+	Powerup.Strength 90
+}
+
+actor AmongUsSpeed : PowerupGiver
+{
+  +COUNTITEM
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  Inventory.MaxAmount 0
+  Powerup.Type Speed
+  Inventory.PickupMessage "Increased Speed"
+  States
+  {
+    Spawn:
+      TNT1 A -1
+      Stop
+  }
+}

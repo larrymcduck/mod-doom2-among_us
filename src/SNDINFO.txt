@@ -1,0 +1,73 @@
+// --- start weapons ---
+
+// pistol
+weapons/pistol aspistol
+$limit weapons/pistol 0
+
+weapons/punch dspunch
+$limit weapons/punch 0
+
+// bfg10k
+Weapons/BFG10KF		DSBFG10K
+Weapons/BFG10KX		DSBAREXP
+Weapons/BFG10KCool	DS10KCDN
+Weapons/BFG10KIdle	DS10KIDL
+$Limit	Weapons/BFG10KX	0
+
+// black hole generator
+DMC/Charge		DMC_CHRG
+DMC/Fire		DMC_FIRE
+DMBall/Impact	DMC_IMPX
+BHole/Suck		DMC_VOID
+BHole/Explosion	DMC_XPLD
+$limit DMBall/Impact 0
+$limit BHole/Suck 0
+$limit BHole/Explosion 0
+
+// m6d halo pistol
+weapons/m6dfire asm6dfir
+weapons/m6dzoom ASM6DZOM
+$limit weapons/m6dfire 0
+$limit weapons/m6dzoom 0
+
+// redeemer
+weapons/redeemer asredeem
+$limit weapons/redeemer 0
+
+// sniper rifle
+M40RIF1 M40RIF1
+M40RIF2 M40RIF2
+M40RIF3 M40RIF3
+M40RIF4 M40RIF4
+M40Rifle/Fire  M40RIF1
+M40Rifle/Scope M40RIF2
+M40Rifle/Bolt1 M40RIF3
+M40Rifle/Bolt2 M40RIF4
+$Singular M40Rifle/Fire
+
+// --- end weapons ---
+
+
+// --- start misc ---
+
+misc/healing healing1
+$limit misc/healing1 0
+
+misc/invuse artiuse
+$limit misc/invuse 0
+
+menu/activate menusel
+menu/backup	menusel
+menu/prompt	menusel
+menu/cursor	menumove
+menu/change	menumove
+menu/invalid menusel
+menu/dismiss menumove
+menu/choose menusel
+menu/clear menusel
+
+// no limit for platform start/stop
+$limit plats/pt1_strt 0
+$limit plats/pt1_stop 0
+
+// --- end misc ---

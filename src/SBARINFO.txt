@@ -1,0 +1,160 @@
+height 0;
+monospacefonts true, "0";
+interpolatehealth true, 6;
+
+statusbar fullscreen, fullscreenoffsets, forcescaled
+{
+	IsSelected not Crewmate, Imposter
+	{
+		// health
+		drawimage "MEDIA0", 20, -2, centerbottom;
+		drawnumber 3, HUDFONT_DOOM, untranslated, health, drawshadow, 82, -20;
+
+		//armor
+		drawimage armoricon, 20, -24, centerbottom;
+		drawnumber 3, HUDFONT_DOOM, untranslated, armor, drawshadow, whennotzero, 82, -39;
+
+		//ammo
+		drawimage ammoicon1, -14, -4, centerbottom;
+		drawnumber 3, HUDFONT_DOOM, untranslated, ammo1, drawshadow, -25, -20;
+
+		gamemode deathmatch
+		{
+			drawnumber 2, HUDFONT_DOOM, untranslated, frags, drawshadow, -3, 1;
+		}
+		gamemode singleplayer, cooperative, teamgame
+		{
+			drawkeybar 6, vertical, reverserows, auto, -10, 2, 0, 3, auto;
+		}
+
+		DrawSelectedInventory centerbottom, INDEXFONT_RAVEN, -19, -64, -6, -70, untranslated, 1;
+
+		DrawSwitchableImage Vented_Seconds, "VENT2", "VENT1", -34, -52;
+		InInventory Vented_Seconds, 1
+		{
+			drawnumber 2, AMONG_US_NUM, untranslated, Vented_Seconds, alignment(center), -20, -47;
+		}
+	}
+	Else
+	{
+//		DrawImage "TASKBDR", 13, 17;
+//		DrawBar "TASKBAR2", "TASKBAR1", AmongUsTask, horizontal, interpolate(1), 28, 35;
+//		DrawImage "TASKTOT", 38, 40;
+//
+//		DrawSwitchableImage UseReport, "REPORT1", "REPORT2", -117, -232;
+//
+//		InInventory UseAdmin, 1
+//		{
+//			drawimage "P_ADMIN2", -117, -116;
+//		}
+//
+//		InInventory not UseAdmin, 1
+//		{
+//			DrawSwitchableImage UseDefault, "USE1", "USE2", -117, -116;
+//		}
+//		
+//		IsSelected Imposter
+//		{
+//			drawimage "IMPSABA2", -234, -116;
+//
+//			DrawSwitchableImage UseKill, "IMPKILL1", "IMPKILL2", -351, -116;
+//			InInventory KillTimer, 1
+//			{
+//				drawnumber 2, AMONG_US_NUM, untranslated, KillTimer, alignment(center), -297, -100;
+//			}
+//		}
+	}
+}
+
+statusbar normal, fullscreenoffsets, forcescaled
+{
+	IsSelected not Crewmate, Imposter
+	{
+		// health
+		drawimage "MEDIA0", 20, -2, centerbottom;
+		drawnumber 3, HUDFONT_DOOM, untranslated, health, drawshadow, 82, -20;
+
+		//armor
+		drawimage armoricon, 20, -24, centerbottom;
+		drawnumber 3, HUDFONT_DOOM, untranslated, armor, drawshadow, whennotzero, 82, -39;
+
+		//ammo
+		drawimage ammoicon1, -14, -4, centerbottom;
+		drawnumber 3, HUDFONT_DOOM, untranslated, ammo1, drawshadow, -25, -20;
+
+		gamemode deathmatch
+		{
+			drawnumber 2, HUDFONT_DOOM, untranslated, frags, drawshadow, -3, 1;
+		}
+		gamemode singleplayer, cooperative, teamgame
+		{
+			drawkeybar 6, vertical, reverserows, auto, -10, 2, 0, 3, auto;
+		}
+
+		DrawSelectedInventory centerbottom, INDEXFONT_RAVEN, -19, -64, -6, -70, untranslated, 1;
+
+		DrawSwitchableImage Vented_Seconds, "VENT2", "VENT1", -34, -52;
+		InInventory Vented_Seconds, 1
+		{
+			drawnumber 2, AMONG_US_NUM, untranslated, Vented_Seconds, alignment(center), -20, -47;
+		}
+	}
+	Else
+	{
+//		DrawImage "TASKBDR", 13, 17;
+//		DrawBar "TASKBAR2", "TASKBAR1", AmongUsTask, horizontal, interpolate(1), 28, 35;
+//		DrawImage "TASKTOT", 38, 40;
+//
+//		DrawSwitchableImage UseReport, "REPORT1", "REPORT2", -117, -232;
+//
+//		InInventory UseAdmin, 1
+//		{
+//			drawimage "P_ADMIN2", -117, -116;
+//		}
+//
+//		InInventory not UseAdmin, 1
+//		{
+//			DrawSwitchableImage UseDefault, "USE1", "USE2", -117, -116;
+//		}
+//		
+//		IsSelected Imposter
+//		{
+//			drawimage "IMPSABA2", -234, -116;
+//
+//			DrawSwitchableImage UseKill, "IMPKILL1", "IMPKILL2", -351, -116;
+//			InInventory KillTimer, 1
+//			{
+//				drawnumber 2, AMONG_US_NUM, untranslated, KillTimer, alignment(center), -297, -100;
+//			}
+//		}
+	}
+}
+
+statusbar InventoryFullscreen, forcescaled
+{
+	IsSelected not Crewmate
+	{
+		drawinventorybar Hexen, noartibox, alwaysshow, 7, INDEXFONT_RAVEN, 51, 4, 77, 26, untranslated, 1;
+	}
+}
+
+statusbar Inventory, fullscreenoffsets, forcescaled
+{
+	IsSelected not Crewmate
+	{
+		drawinventorybar Hexen, noartibox, alwaysshow, 7, INDEXFONT_RAVEN, 51, 4, 77, 26, untranslated, 1;
+	}
+}
+
+statusbar Automap, fullscreenoffsets
+{
+	IsSelected not Crewmate, Imposter
+	{
+	}
+	Else
+	{
+		DrawImage "BLKBAK", 0, 0;
+		DrawImage "MINIMAP1", 0 + center, 0 + center, center;
+		// DrawImage translatable "MINIICON", 0, 0, center;
+	}
+}

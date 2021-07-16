@@ -1,0 +1,18 @@
+#include "actors/weapons/bfg10k.txt"
+#include "actors/weapons/blackholegenerator.txt"
+#include "actors/weapons/crewmate.txt"
+#include "actors/weapons/doomweapons.txt"
+#include "actors/weapons/halopistol.txt"
+#include "actors/weapons/imposter.txt"
+#include "actors/weapons/redeemer.txt"
+#include "actors/weapons/sniperrifle.txt"
+
+#include "actors/inventory/door_locks.txt"
+#include "actors/inventory/inventory.txt"
+#include "actors/inventory/powerups.txt"
+
+#include "actors/decor/trees.txt"
+
+#include "actors/classes/SusPlayer.txt"
+
+#include "actors/randomizer.txt"

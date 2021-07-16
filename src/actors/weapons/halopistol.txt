@@ -1,0 +1,68 @@
+actor  AmongUsM6d : Weapon
+{
+	Tag "M6D Pistol"
+	Scale 0.05
+	weapon.ammouse 1
+	weapon.ammotype "AmongUsClip"
+    Weapon.AmmoGive 20
+	+weapon.noautofire
+	+Weapon.NoAlert
+    +INVENTORY.ALWAYSPICKUP
+	attacksound "weapons/m6dfire"
+	Decal BulletChip
+	States
+	{
+		Spawn:
+			M6DP A -1
+			Stop
+		Ready:
+			M6DP B 0 A_JumpIfInventory("M6dZoom", 1, "ScopedReady")
+			M6DP B 1 A_WeaponReady
+			Loop
+		ScopedReady:
+			M6DP F 1 A_WeaponReady(1)
+			Loop
+		Select:
+			M6DP B 0 A_raise
+			M6DP B 1 A_raise
+			Loop
+		Deselect:
+			M6DP B 0 A_JumpIfInventory("M6dZoom", 1, "ScopedDeselect")
+			M6DP B 0 A_lower
+			M6DP B 1 A_lower
+			Loop
+		ScopedDeselect:
+			M6DP F 0 A_PlaySound("weapons/m6dzoom")
+			M6DP F 0 A_TakeInventory("M6dZoom", 1)
+			M6DP B 1 A_ZoomFactor(1.0)
+			M6DP B 0 A_Lower
+			M6DP B 1 A_Lower
+			Goto ScopedDeselect+3
+		Fire:
+			M6DP B 0 A_AlertMonsters
+			M6DP B 0 A_JumpIfInventory("M6dZoom", 1, "ScopedFire")
+			M6DP C 2 A_FireBullets(4, 3, 1, 6, "BulletPuff")
+			M6DP D 3
+			M6DP EEEEE 1 A_WeaponReady
+			Goto Ready
+		ScopedFire:
+			M6DP F 2 A_FireBullets(4, 3, 1, 6, "BulletPuff")
+			M6DP F 3
+			M6DP FFFFF 1 A_WeaponReady
+			Goto ScopedReady
+		AltFire:
+			M6DP B 0 A_PlaySound("weapons/m6dzoom")
+			M6DP B 0 A_JumpIfInventory("M6dZoom", 1, "ZoomOut")
+		ZoomIn:
+			M6DP F 0 A_GiveInventory("M6dZoom", 1)
+			M6DP F 1 A_ZoomFactor(2.0)
+			Goto ScopedReady
+		ZoomOut:
+			M6DP B 0 A_TakeInventory("M6dZoom", 1)
+			M6DP B 1 A_ZoomFactor(1.0)
+			Goto Ready
+			
+	}
+}
+
+ACTOR M6dZoom : Inventory { Inventory.MaxAmount 1 }

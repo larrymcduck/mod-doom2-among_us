@@ -1,0 +1,135 @@
+Actor AmongUsDummyInventory1 : Inventory
+{
+	Inventory.MaxAmount 1
+}
+
+Actor AmongUsDummyInventory99 : Inventory
+{
+	Inventory.MaxAmount 99
+}
+
+Actor KillTimer : AmongUsDummyInventory99 {}
+Actor AmongUsTask : AmongUsDummyInventory99 {}
+
+Actor UseDefault : AmongUsDummyInventory1 {}
+Actor UseAdmin : AmongUsDummyInventory1 {}
+Actor UseReport : AmongUsDummyInventory1 {}
+Actor UseKill : AmongUsDummyInventory1 {}
+
+Actor RoomUpperEngine : AmongUsDummyInventory1 {}
+Actor RoomMedBay : AmongUsDummyInventory1 {}
+Actor RoomCafeteria : AmongUsDummyInventory1 {}
+Actor RoomWeapons : AmongUsDummyInventory1 {}
+Actor RoomReactor : AmongUsDummyInventory1 {}
+Actor RoomSecurity : AmongUsDummyInventory1 {}
+Actor RoomLowerEngine : AmongUsDummyInventory1 {}
+Actor RoomElectrical : AmongUsDummyInventory1 {}
+Actor RoomStorage : AmongUsDummyInventory1 {}
+Actor RoomAdmin : AmongUsDummyInventory1 {}
+Actor RoomO2 : AmongUsDummyInventory1 {}
+Actor RoomNavigation : AmongUsDummyInventory1 {}
+Actor RoomShields : AmongUsDummyInventory1 {}
+Actor RoomCommunications : AmongUsDummyInventory1 {}
+
+Actor Vented_Seconds : AmongUsDummyInventory99 {}
+
+Actor AmongUsDoorLock : CustomInventory
+{
+	Inventory.MaxAmount 1
+	+Inventory.Invbar
+	+Inventory.KeepDepleted
+
+	States
+	{
+		Spawn:
+			TNT1 A -1
+			Stop
+		Use:
+			TNT1 A 0
+			stop
+	}
+}
+
+Actor LockCafeteria : AmongUsDoorLock
+{
+	Tag "Lock Cafeteria"
+	Inventory.Icon "lockcafe"
+	States
+	{
+		Use:
+			TNT1 A 0 ACS_ExecuteAlways(6, 0, 1)
+			stop
+	}
+}
+
+Actor LockStorage : AmongUsDoorLock
+{
+	Tag "Lock Storage"
+	Inventory.Icon "lockstor"
+	States
+	{
+		Use:
+			TNT1 A 0 ACS_ExecuteAlways(6, 0, 3)
+			stop
+	}
+}
+
+Actor LockElectrical : AmongUsDoorLock
+{
+	Tag "Lock Electrical"
+	Inventory.Icon "lockelec"
+	States
+	{
+		Use:
+			TNT1 A 0 ACS_ExecuteAlways(6, 0, 4)
+			stop
+	}
+}
+
+Actor LockLowerEngine : AmongUsDoorLock
+{
+	Tag "Lock Lower Engine"
+	Inventory.Icon "locklowe"
+	States
+	{
+		Use:
+			TNT1 A 0 ACS_ExecuteAlways(6, 0, 5)
+			stop
+	}
+}
+
+Actor LockSecurity : AmongUsDoorLock
+{
+	Tag "Lock Security"
+	Inventory.Icon "locksecu"
+	States
+	{
+		Use:
+			TNT1 A 0 ACS_ExecuteAlways(6, 0, 7)
+			stop
+	}
+}
+
+Actor LockUpperEngine : AmongUsDoorLock
+{
+	Tag "Lock Upper Engine"
+	Inventory.Icon "lockupen"
+	States
+	{
+		Use:
+			TNT1 A 0 ACS_ExecuteAlways(6, 0, 8)
+			stop
+	}
+}
+
+Actor LockMedBay : AmongUsDoorLock
+{
+	Tag "Lock MedBay"
+	Inventory.Icon "lockmedb"
+	States
+	{
+		Use:
+			TNT1 A 0 ACS_ExecuteAlways(6, 0, 9)
+			stop
+	}
+}

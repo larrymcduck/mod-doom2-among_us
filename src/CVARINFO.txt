@@ -1,0 +1,5 @@
+server int amongus_gametype = 1;
+// 0 = Sus
+// 1 = Deathmatch
+
+server int amongus_vent_wait_seconds = 5;

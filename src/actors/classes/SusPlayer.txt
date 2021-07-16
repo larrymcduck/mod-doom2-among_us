@@ -1,0 +1,45 @@
+ACTOR SusPlayer : PlayerPawn
+{
+  Speed 1
+  Health 100
+  Radius 16
+  Height 56
+  Mass 100
+  PainChance 255
+  Scale 0.6
+  Player.DisplayName "Crewmate"
+  Player.WeaponSlot 1, Crewmate, Imposter, AmongUsFist, AmongUsChainsaw
+  Player.WeaponSlot 2, AmongUsPistol, AmongUsM6d
+  Player.WeaponSlot 3, AmongUsShotgun, AmongUsSuperShotgun
+  Player.WeaponSlot 4, AmongUsChaingun
+  Player.WeaponSlot 5, AmongUsRocketLauncher, M40Rifle
+  Player.WeaponSlot 6, AmongUsPlasmaRifle, BHGen
+  Player.WeaponSlot 7, AmongUsBFG9000, STBFG10K, Redeemer
+  Player.ColorRange 112, 127
+
+  States
+  {
+    Spawn:
+      AMNG A -1
+      Loop
+    See:
+      AMNG BCDEFGHIJKLM 2
+      Loop
+    Missile:
+      AMNG QR 6
+      Goto Spawn
+    Melee:
+      AMNG O 2 Bright
+      AMNG N 16
+      Goto Spawn
+    Pain:
+      AMNG P 8
+      Goto Spawn
+    Death:
+	  ADED A 2 A_NoBlocking
+      ADED BCDEFGHIJKLMNOPQRSTUVWXYZ 2
+      ADEE ABCDEF 2
+      ADEE G -1
+      Stop
+  }
+}

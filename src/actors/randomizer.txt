@@ -1,0 +1,81 @@
+Actor AmongUsRandomGiver : CustomInventory
+{
+  Radius 16
+  Height 32
+  Scale 0.1
+  RenderStyle Translucent
+  Alpha 0.75
+  Inventory.PickupSound ""
+  
+  +FLOATBOB
+  +NOGRAVITY
+
+  States
+  {
+    Spawn:
+      RAND A -1
+	  Stop
+	Pickup:
+	  RAND A 0
+	  Stop
+  }
+}
+Actor AmongUsRandomWeapon : AmongUsRandomGiver 10006
+{
+  Tag "random_weapon"
+  
+  States
+  {
+    Spawn:
+      RAND B -1
+	  Stop
+    Pickup:
+	  RAND B 0 ACS_NamedExecuteAlways("item_giver", 0, 0)
+	  Stop
+  }
+}
+
+Actor AmongUsRandomAmmo : AmongUsRandomGiver 10007
+{
+  Tag "random_ammo"
+
+  States
+  {
+    Spawn:
+      RAND C -1
+	  Stop
+    Pickup:
+	  RAND C 0 ACS_NamedExecuteAlways("item_giver", 0, 1)
+	  Stop
+  }
+}
+
+Actor AmongUsRandomPowerup : AmongUsRandomGiver 10008
+{
+  Tag "random_powerup"
+
+  States
+  {
+     Spawn:
+      RAND A -1
+	  Stop
+   Pickup:
+	  RAND A 0 ACS_NamedExecuteAlways("item_giver", 0, 2)
+	  Stop
+  }
+}
+
+Actor AmongUsRandomInventory : AmongUsRandomGiver 10009
+{
+  Tag "random_inventory"
+
+  States
+  {
+    Spawn:
+      RAND D -1
+	  Stop
+    Pickup:
+	  RAND D 0 ACS_NamedExecuteAlways("item_giver", 0, 3)
+	  Stop
+  }
+}

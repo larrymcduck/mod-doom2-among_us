@@ -1,0 +1,4 @@
+:Seq1Door
+   play plats/pt1_strt
+   stopsound plats/pt1_stop
+end

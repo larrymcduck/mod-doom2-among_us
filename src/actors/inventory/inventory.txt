@@ -1,0 +1,6 @@
+actor Chickenator : ArtiEgg replaces ArtiEgg
+{
+  +INVENTORY.ALWAYSPICKUP
+  Inventory.PickupMessage "Chickenator!"
+  Tag "Chickenator"
+}
