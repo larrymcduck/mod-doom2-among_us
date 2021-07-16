@@ -1,0 +1,69 @@
+# Among Us
+https://innersloth.com/gameAmongUs.php
+
+## Weapons
+### BFG10K
+- Class: 7
+- Type: Hitscan
+- Palette: Doom
+- Summon: STBFG10K
+- Ammo Type: Cell
+- Altfire: No
+- Powered Mode: No
+- Brightmaps: No
+- Actor modification: No
+- ACS: No
+- Code: The Skulltag Team, Ghastly (ZScript conversion)
+- GLDefs: The Skulltag Team
+- Sounds: The Skulltag Team
+- Sprites: Eriance
+- Idea Base: Quake 3's BFG10k
+
+### Black Hole Generator
+- Class: 7
+- Type: Projectile
+- Palette: Custom
+- Summon: BHGen
+- Ammo Type: Cell
+- Altfire: No
+- Submitted: Gothic
+- Decorate: Gothic
+- GLDefs: Gothic
+- Sounds: Raven Software (Quake 4), Epic Games (UT 2004)
+- Sprites: NMN, Zero Prophet, Reactor, Kronos, Midway
+- Sprite Edit: Gothic
+- Idea Base: Dark Matter Gun from Quake 4, Borsch from Russian Overkill
+
+### Sniper Rifle
+- Name: M40A1
+- Class: 6
+- Type: Hitscan
+- Palette: Custom
+- Summon: M40Rifle
+- Ammo Type: M40762Ammo
+- Altfire: Yes
+- Powered Mode: No
+- Added States: No
+- Submitted: TODM
+- Decorate: TODM
+- Sounds: VALVe
+- Sprites: HL:OpFor, TODM
+- Sprite Edit: Cory Whittle, TheDarkArchon, TODM
+- Idea Base: Left 4 Dead 2/CS:S/HL:OpFor "AWP"
+
+## Decorations
+### trees
+- Name: Garden Plantations
+- Connection: None
+- Palette: Doom
+- Summon: Gardentree[1-2], Gardenbush[1-3]
+- Ambient Sound: N/A 
+- De-/Activatable: N/A
+- Destroyable: Yes
+- Special Effects: N/A
+- ACS: N/A
+- Submitted: Yuyu3
+- Decorate: Yuyu3
+- Sprites: Rogue Entertainment, Raven Software
+- Sprite Edit: Yuyu3
+- Idea Base: Need to Vitalize doom Dry Trees
