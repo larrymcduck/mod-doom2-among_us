@@ -9,18 +9,18 @@
 - Home page: https://innersloth.com/gameAmongUs.php
 - Any textures/graphics/sprites/sounds from the Among Us game are owned by Innersloth
 
-## Weapons
-### Halo M6D Pistol
+### Weapons
+#### Halo M6D Pistol
 - https://www.halopedia.org/M6D_magnum
-### BFG10K
+#### BFG10K
 - https://www.realm667.com/index.php/en/armory-mainmenu-157-97317/doom-style-mainmenu-158-94349/804-bfg10k
-### Black Hole Generator
+#### Black Hole Generator
 - https://www.realm667.com/index.php/en/armory-mainmenu-157-97317/doom-style-mainmenu-158-94349/1663-black-hole-generator 
-### Sniper Rifle
+#### Sniper Rifle
 - https://www.realm667.com/index.php/en/armory-mainmenu-157-97317/doom-style-mainmenu-158-94349/1038-m40a1-sniper-rifle
-### Unreal Tournament Redeemer
+#### Unreal Tournament Redeemer
 - https://unreal.fandom.com/wiki/Redeemer
 
-## Decorations
-### Garden Trees
+### Decorations
+#### Garden Trees
 - https://www.realm667.com/index.php/en/prop-stop-mainmenu-163-64831/vegetation-mainmenu-165-65318/1116-garden-trees
