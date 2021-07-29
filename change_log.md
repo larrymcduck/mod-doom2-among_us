@@ -1,3 +1,14 @@
+## v1.2 - 2021.07.29
+### general
+- removed unused resources
+- updated game startup dialog box title and color
+### menu
+- added small font
+### map
+- fixed missing reactor doors (always open)
+- fixed continued medbay healing after death
+- fixed gap behind barrels in storage
+
 ## v1.1 - 2021.07.01 
 ### menu
 - added sounds and cursors
