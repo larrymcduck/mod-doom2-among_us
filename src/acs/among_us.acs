@@ -1,8 +1,8 @@
 #library "among_us"
 #include "zcommon.acs"
 
-int weapon_count = 12;
-str random_weapon[12] = {
+int weapon_count = 13;
+str random_weapon[13] = {
   "AmongUsChainsaw",
   "AmongUsPistol",
   "AmongUsShotgun",
@@ -14,7 +14,8 @@ str random_weapon[12] = {
   "BHGen",
   "AmongUsM6d",
   "Redeemer",
-  "M40Rifle"
+  "M40Rifle",
+  "AmongUsLightningGun"
 };
 
 int ammo_count = 11;

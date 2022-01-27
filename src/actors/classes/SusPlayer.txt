@@ -13,7 +13,7 @@ ACTOR SusPlayer : PlayerPawn
   Player.WeaponSlot 3, AmongUsShotgun, AmongUsSuperShotgun
   Player.WeaponSlot 4, AmongUsChaingun
   Player.WeaponSlot 5, AmongUsRocketLauncher, M40Rifle
-  Player.WeaponSlot 6, AmongUsPlasmaRifle, BHGen
+  Player.WeaponSlot 6, AmongUsPlasmaRifle, AmongUsLightningGun, BHGen
   Player.WeaponSlot 7, AmongUsBFG9000, STBFG10K, Redeemer
   Player.ColorRange 112, 127
 

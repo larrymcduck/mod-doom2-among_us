@@ -1,3 +1,11 @@
+## v1.3 - 2022.01.27
+### general
+- fixed blue box pickups
+### weapons
+- added Lightning Gun
+### map
+- fixed reactor floor glitch
+
 ## v1.2 - 2021.07.29
 ### general
 - removed unused resources

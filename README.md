@@ -23,6 +23,8 @@
 - https://www.realm667.com/index.php/en/armory-mainmenu-157-97317/doom-style-mainmenu-158-94349/1038-m40a1-sniper-rifle
 #### Unreal Tournament Redeemer
 - https://unreal.fandom.com/wiki/Redeemer
+#### Lightning Gun
+- https://www.realm667.com/index.php/en/armory-mainmenu-157-97317/doom-style-mainmenu-158-94349/684-electro-gun
 
 ### Decorations
 #### Garden Trees

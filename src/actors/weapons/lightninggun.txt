@@ -1,0 +1,88 @@
+actor AmongUsLightningGun : MWeapLightning
+{
+    Weapon.YAdjust 0
+    Weapon.AmmoUse 20
+    Weapon.AmmoGive 40
+    Weapon.AmmoType "AmongUsCell"
+    Tag "Lightning Gun"
+    Inventory.PickupMessage "Lightning Gun"
+    States
+    {
+        Spawn:
+            ETRO A -1
+            Stop
+        Ready:
+            ETRG A 1 A_WeaponReady
+            Loop
+        Deselect:
+            ETRG A 0 A_Lower
+            ETRG A 1 A_Lower
+            Loop
+        Select:
+            ETRG A 0 A_Raise
+            ETRG A 1 A_Raise
+            Loop
+        Fire:
+            ETRG A 0 A_PlaySound("MageLightningReady")
+            ETRG A 3 A_GunFlash
+            ETRG A 3 A_PlaySound("MageLightningReady")
+            ETRF A 3 A_MLightningAttack
+            ETRG B 25
+            Goto Ready
+        Flash:
+            ETRF A 3 Bright A_Light1
+            ETRF B 3 Bright A_Light1
+            ETRF C 3 Bright A_Light1
+            Goto LightDone
+    }
+}
+
+actor ElectroBlast
+{
+  Radius 13
+  Height 8
+  Speed 25
+  Damage 6
+  Projectile
+  DamageType Disintegrate
+  Scale .75
+  +RANDOMIZE
+  +BLOODLESSIMPACT
+  +NOEXTREMEDEATH
+  RenderStyle Add
+  Alpha 0.75
+  SeeSound "electrogun/shoot"
+  DeathSound "electrogun/hit"
+  Obituary "%o was shocked by %k's electro gun."
+  States
+  {
+  Spawn:
+    EBLT GH 0 bright A_SpawnItem("ElectroBlastTrail")
+    EBLT GH 2 bright A_BishopMissileWeave
+    loop
+  Death:
+    EBLT IJK 3 bright
+    stop
+  }
+}
+
+actor ElectroBlastTrail
+{
+  Radius 13
+  Height 8
+  Speed 20
+  Damage 0
+  Projectile
+  +RANDOMIZE
+  RenderStyle Add
+  Alpha 0.75
+  States
+  {
+  Spawn:
+    EBLT ABC 3 bright A_BishopMissileWeave
+    goto death
+  Death:
+    EBLT DEF 4 bright A_FadeOut(0.5)
+    loop
+  }
+}

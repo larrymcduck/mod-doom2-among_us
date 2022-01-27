@@ -72,19 +72,19 @@ statusbar normal, fullscreenoffsets, forcescaled
 	{
 		// health
 		drawimage "MEDIA0", 20, -2, centerbottom;
-		drawnumber 3, HUDFONT_DOOM, untranslated, health, drawshadow, 82, -20;
+		drawnumber 3, AMONG_US_NUM, untranslated, health, drawshadow, 60, -20;
 
 		//armor
 		drawimage armoricon, 20, -24, centerbottom;
-		drawnumber 3, HUDFONT_DOOM, untranslated, armor, drawshadow, whennotzero, 82, -39;
+		drawnumber 3, AMONG_US_NUM, untranslated, armor, drawshadow, whennotzero, 60, -39;
 
 		//ammo
 		drawimage ammoicon1, -14, -4, centerbottom;
-		drawnumber 3, HUDFONT_DOOM, untranslated, ammo1, drawshadow, -25, -20;
+		drawnumber 3, AMONG_US_NUM, untranslated, ammo1, drawshadow, -25, -20;
 
 		gamemode deathmatch
 		{
-			drawnumber 2, HUDFONT_DOOM, untranslated, frags, drawshadow, -3, 1;
+			drawnumber 2, AMONG_US_NUM, untranslated, frags, drawshadow, -3, 1;
 		}
 		gamemode singleplayer, cooperative, teamgame
 		{

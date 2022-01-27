@@ -45,6 +45,12 @@ M40Rifle/Bolt1 M40RIF3
 M40Rifle/Bolt2 M40RIF4
 $Singular M40Rifle/Fire
 
+// lightning gun
+MageLightningFire lite2
+MageLightningReady wepele2
+$limit MageLightningFire 0
+$limit MageLightningReady 0
+
 // --- end weapons ---
 
 

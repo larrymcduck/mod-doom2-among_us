@@ -4,6 +4,7 @@
 #include "actors/weapons/doomweapons.txt"
 #include "actors/weapons/halopistol.txt"
 #include "actors/weapons/imposter.txt"
+#include "actors/weapons/lightninggun.txt"
 #include "actors/weapons/redeemer.txt"
 #include "actors/weapons/sniperrifle.txt"
 
