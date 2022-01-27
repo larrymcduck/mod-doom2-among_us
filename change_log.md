@@ -1,6 +1,7 @@
 ## v1.3 - 2022.01.27
 ### general
 - fixed blue box pickups
+- added 3d models for pickups
 ### weapons
 - added Lightning Gun
 ### map

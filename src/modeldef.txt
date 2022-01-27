@@ -1,0 +1,39 @@
+Model AmongUsRandomWeapon
+{
+    Path "models/inventory/pickup"
+    Model 0 "block.md2"
+    Skin 0 "yellow.png"
+    Scale 15.0 15.0 15.0
+    Rotating
+    FrameIndex RAND B 0 0
+}
+
+Model AmongUsRandomAmmo
+{
+    Path "models/inventory/pickup"
+    Model 0 "block.md2"
+    Skin 0 "brown.png"
+    Scale 15.0 15.0 15.0
+    Rotating
+    FrameIndex RAND C 0 0
+}
+
+Model AmongUsRandomPowerup
+{
+    Path "models/inventory/pickup"
+    Model 0 "block.md2"
+    Skin 0 "red.png"
+    Scale 15.0 15.0 15.0
+    Rotating
+    FrameIndex RAND A 0 0
+}
+
+Model AmongUsRandomInventory
+{
+    Path "models/inventory/pickup"
+    Model 0 "block.md2"
+    Skin 0 "blue.png"
+    Scale 15.0 15.0 15.0
+    Rotating
+    FrameIndex RAND D 0 0
+}
