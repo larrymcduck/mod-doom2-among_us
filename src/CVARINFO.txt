@@ -3,3 +3,7 @@ server int amongus_gametype = 1;
 // 1 = Deathmatch
 
 server int amongus_vent_wait_seconds = 5;
+
+server int amongus_deathmatch_lockdoors = 0;
+// 0 = false
+// 1 = true

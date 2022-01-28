@@ -34,6 +34,16 @@ statusbar fullscreen, fullscreenoffsets, forcescaled
 		{
 			drawnumber 2, AMONG_US_NUM, untranslated, Vented_Seconds, alignment(center), -20, -47;
 		}
+
+		InInventory M6dZoom, 1
+		{
+		    drawimage "m6dcross", -6+center, -6+center;
+		    drawimage "m6ddark", -911+center, -415+center;
+		}
+		InInventory M40A1Zoom, 1
+		{
+		    drawimage "SNPSA0", -911+center, -415+center;
+		}
 	}
 	Else
 	{
@@ -97,6 +107,12 @@ statusbar normal, fullscreenoffsets, forcescaled
 		InInventory Vented_Seconds, 1
 		{
 			drawnumber 2, AMONG_US_NUM, untranslated, Vented_Seconds, alignment(center), -20, -47;
+		}
+
+		InInventory M6dZoom, 1
+		{
+		    drawimage "m6dcross", 0+center, 0+center;
+		    drawimage "m6ddark", 0+center, 0+center;
 		}
 	}
 	Else

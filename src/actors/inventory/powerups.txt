@@ -1,23 +1,76 @@
-actor AmongUsInvisibility : BlurSphere
-{
-	-VISIBILITYPULSE
-	-INVENTORY.BIGPOWERUP
-	Powerup.Mode Translucent
-	Powerup.Strength 90
-}
-
-actor AmongUsSpeed : PowerupGiver
+actor AmongUsMegaHealth : CustomInventory
 {
   +COUNTITEM
   +INVENTORY.AUTOACTIVATE
   +INVENTORY.ALWAYSPICKUP
   Inventory.MaxAmount 0
+  Inventory.PickupMessage "Mega Health!"
+  States
+  {
+    Spawn:
+      TNT1 A -1
+      Stop
+    Pickup:
+      TNT1 A 0 A_GiveInventory("MegasphereHealth", 1)
+      Stop
+  }
+}
+
+actor AmongUsPowerup : PowerupGiver
+{
+  +COUNTITEM
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  -INVENTORY.BIGPOWERUP
+  Inventory.MaxAmount 0
+  Powerup.Duration -30
   Powerup.Type Speed
-  Inventory.PickupMessage "Increased Speed"
   States
   {
     Spawn:
       TNT1 A -1
       Stop
   }
+}
+
+actor AmongUsInvisibility : AmongUsPowerup
+{
+  Powerup.Type Invisibility
+  Powerup.Mode Translucent
+  Powerup.Strength 90
+  Inventory.PickupMessage "Cloak!"
+}
+
+actor AmongUsLight : AmongUsPowerup
+{
+  Powerup.Type LightAmp
+  Inventory.PickupMessage "Light Amplification"
+}
+
+actor AmongUsSpeed : AmongUsPowerup
+{
+  Powerup.Type Speed
+  Inventory.PickupMessage "Increased Speed!"
+  Powerup.Color 0 0 255
+}
+
+actor AmongUsRapidFire : AmongUsPowerup
+{
+  Powerup.Type PowerDoubleFiringSpeed
+  Inventory.PickupMessage "Rapid Fire!"
+  Powerup.Color 255 255 0
+}
+
+actor AmongUsDoubleDamage : AmongUsPowerup
+{
+  Powerup.Type PowerDamage
+  Inventory.PickupMessage "Double Damage!"
+  Powerup.Color 255 192 0
+}
+
+actor AmongUsProtection : AmongUsPowerup
+{
+  Powerup.Type PowerProtection
+  Inventory.PickupMessage "Protection!"
+  Powerup.Color 255 255 255
 }

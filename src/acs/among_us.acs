@@ -1,10 +1,9 @@
 #library "among_us"
 #include "zcommon.acs"
 
-int weapon_count = 13;
-str random_weapon[13] = {
+int weapon_count = 12;
+str random_weapon[12] = {
   "AmongUsChainsaw",
-  "AmongUsPistol",
   "AmongUsShotgun",
   "AmongUsSuperShotgun",
   "AmongUsChaingun",
@@ -33,14 +32,13 @@ str random_ammo[11] = {
   "M40762AmmoBox"
 };
 
-int powerup_count = 8;
-str random_powerup[8] = {
-  "Berserk",
+int powerup_count = 7;
+str random_powerup[7] = {
   "AmongUsInvisibility",
-  "Infrared",
+  "AmongUsLight",
   "AmongUsSpeed",
-  "AmongUsMegaHeal",
-  "AmongUsDoubleFiringSpeed",
+  "AmongUsMegaHealth",
+  "AmongUsRapidFire",
   "AmongUsDoubleDamage",
   "AmongUsProtection"
 };
@@ -70,14 +68,19 @@ script "player_enter_or_respawn" (void)
 	if (GetCVar("amongus_gametype") == 1)
 	{
 		GiveInventory("AmongUsFist", 1);
+		GiveInventory("AmongUsPistol", 1);
+		GiveInventory("AmongUsClip", 5);
 
-		GiveInventory("LockCafeteria", 1);
-		GiveInventory("LockStorage", 1);
-		GiveInventory("LockElectrical", 1);
-		GiveInventory("LockLowerEngine", 1);
-		GiveInventory("LockSecurity", 1);
-		GiveInventory("LockUpperEngine", 1);
-		GiveInventory("LockMedBay", 1);
+        if (GetCVar("amongus_deathmatch_lockdoors") == 1)
+        {
+            GiveInventory("LockCafeteria", 1);
+            GiveInventory("LockStorage", 1);
+            GiveInventory("LockElectrical", 1);
+            GiveInventory("LockLowerEngine", 1);
+            GiveInventory("LockSecurity", 1);
+            GiveInventory("LockUpperEngine", 1);
+            GiveInventory("LockMedBay", 1);
+        }
 	}
 	else
 	{

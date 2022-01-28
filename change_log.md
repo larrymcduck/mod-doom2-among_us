@@ -1,3 +1,33 @@
+## v1.4 - 2022.01.28
+### general
+- locking doors in deathmatch game now configurable
+### weapons
+- in a deathmatch game, start player with Doom Pistol with 25 ammo
+- Doom Pistol removed from random pickup
+- MD6 Pistol zooming is now hires
+- Sniper Rifle zooming is now hires
+### powerups
+- screen tinting added to powerups, tint flashing indicates powerup is fading
+- all powerups duration set to 30 seconds
+- no longer using announcer voice
+  - Cloak
+  - Light Amplification
+- Double Damage
+  - replaces Berserk
+  - orange tint when picked up
+- Increased Speed
+  - blue tint added
+- Rapid Fire
+  - weapon speed doubled
+  - gold tint
+- Protection
+  - decreases damage player takes by half
+  - white tint
+- Mega Health
+  - sets player health to 200
+### map
+- fixed elevator on blue box in Storage
+
 ## v1.3 - 2022.01.27
 ### general
 - fixed blue box pickups
