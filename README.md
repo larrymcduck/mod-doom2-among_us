@@ -5,12 +5,16 @@
   - may run in other applications, only tested with Zandronum
 
 ## Credits
-### Doom 2
-- https://en.wikipedia.org/wiki/Doom_II
-- Any resources (textures, sprites, etc) from the Doom 2 game are owned by id
 ### Among Us
 - Home page: https://innersloth.com/gameAmongUs.php
 - Any resources (textures, sprites, etc) from the Among Us game are owned by Innersloth
+### Doom 2
+- https://en.wikipedia.org/wiki/Doom_II
+- Any resources (textures, sprites, etc) from the Doom 2 game are owned by id
+### Hexen
+- Any resources (textures, sprites, etc) from the Hexen game are owned by Raven
+### Heretic
+- Any resources (textures, sprites, etc) from the Heretic game are owned by Raven
 
 ### Weapons
 #### Halo M6D Pistol
@@ -25,6 +29,8 @@
 - https://unreal.fandom.com/wiki/Redeemer
 #### Lightning Gun
 - https://www.realm667.com/index.php/en/armory-mainmenu-157-97317/doom-style-mainmenu-158-94349/684-electro-gun
+#### Frostbite
+- https://www.realm667.com/index.php/en/armory-mainmenu-157-97317/doom-style-mainmenu-158-94349/929-karasawa
 
 ### Decorations
 #### Garden Trees
