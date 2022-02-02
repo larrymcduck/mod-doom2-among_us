@@ -1,5 +1,6 @@
 Actor AmongUsFist : Fist replaces Fist
 {
+  Tag "Fists"
   States
   {
     Select:

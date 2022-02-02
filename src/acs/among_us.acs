@@ -1,8 +1,8 @@
 #library "among_us"
 #include "zcommon.acs"
 
-int weapon_count = 12;
-str random_weapon[12] = {
+int weapon_count = 14;
+str random_weapon[14] = {
   "AmongUsChainsaw",
   "AmongUsShotgun",
   "AmongUsSuperShotgun",
@@ -14,7 +14,9 @@ str random_weapon[12] = {
   "AmongUsM6d",
   "Redeemer",
   "M40Rifle",
-  "AmongUsLightningGun"
+  "AmongUsLightningGun",
+  "AmongUsFirebolt",
+  "AmongUsFrostbite"
 };
 
 int ammo_count = 11;
@@ -46,7 +48,6 @@ str random_powerup[7] = {
 int inventory_count = 1;
 str random_inventory[1] = {
   "AmongUsChickenator"
-  //"AmongUsBanish"
 };
 
 script "player_enter" ENTER
@@ -157,4 +158,23 @@ script "item_giver" (int item_type)
   }
 
   SpawnForced(selected_item, x, y, z, 124, 0);
+}
+
+script 999 (void)
+{
+  str playerStepSound = "PlayerStepMetal";
+  switch (CheckInventory("PlayerStepSound"))
+  {
+    case 1:
+      playerStepSound = "PlayerStepTile";
+      break;
+    case 2:
+      playerStepSound = "";
+      break;
+  }
+
+  if ((GetActorZ(0) - GetActorFloorZ(0)) == 0.0)
+  {
+    PlaySound(0, playerStepSound, CHAN_BODY, 0.3);
+  }
 }

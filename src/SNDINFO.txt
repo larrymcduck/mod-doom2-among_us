@@ -1,5 +1,59 @@
-// --- start weapons ---
+// --- player sounds ---
+$playersound	susplayer	male	*death		playdead
+$playersounddup	susplayer	male	*xdeath		*death
+$playersounddup	susplayer	male	*gibbed		*death
+$playersound	susplayer	male	*pain100	nosound
+$playersounddup	susplayer	male	*pain75		*pain100
+$playersounddup	susplayer	male	*pain50		*pain100
+$playersounddup	susplayer	male	*pain25		*pain100
+$playersound	susplayer	male	*grunt		nosound
+$playersound	susplayer	male	*land		nosound
+$playersounddup	susplayer	male	*jump		*land
+$playersounddup	susplayer	male	*fist		*land
+$playersound	susplayer	male	*usefail	nosound
+// --- player sounds ---
 
+
+// --- player steps ---
+PlayerStepMetal1 stepmet1
+PlayerStepMetal2 stepmet2
+PlayerStepMetal3 stepmet3
+PlayerStepMetal4 stepmet4
+PlayerStepMetal5 stepmet5
+PlayerStepMetal6 stepmet6
+PlayerStepMetal7 stepmet7
+PlayerStepMetal8 stepmet8
+$random PlayerStepMetal { PlayerStepMetal1 PlayerStepMetal2 PlayerStepMetal3 PlayerStepMetal4 PlayerStepMetal5 PlayerStepMetal6 PlayerStepMetal7 PlayerStepMetal8 }
+$limit PlayerStepMetal 0
+$limit PlayerStepMetal1 0
+$limit PlayerStepMetal2 0
+$limit PlayerStepMetal3 0
+$limit PlayerStepMetal4 0
+$limit PlayerStepMetal5 0
+$limit PlayerStepMetal6 0
+$limit PlayerStepMetal7 0
+$limit PlayerStepMetal8 0
+
+PlayerStepTile1 steptil1
+PlayerStepTile2 steptil2
+PlayerStepTile3 steptil3
+PlayerStepTile4 steptil4
+PlayerStepTile5 steptil5
+PlayerStepTile6 steptil6
+PlayerStepTile7 steptil7
+$random PlayerStepTile { PlayerStepTile1 PlayerStepTile2 PlayerStepTile3 PlayerStepTile4 PlayerStepTile5 PlayerStepTile6 PlayerStepTile7 }
+$limit PlayerStepTile 0
+$limit PlayerStepTile1 0
+$limit PlayerStepTile2 0
+$limit PlayerStepTile3 0
+$limit PlayerStepTile4 0
+$limit PlayerStepTile5 0
+$limit PlayerStepTile6 0
+$limit PlayerStepTile7 0
+// --- player steps ---
+
+
+// --- weapons ---
 // pistol
 weapons/pistol aspistol
 $limit weapons/pistol 0
@@ -51,17 +105,42 @@ MageLightningReady wepele2
 $limit MageLightningFire 0
 $limit MageLightningReady 0
 
-// --- end weapons ---
+// firebolt
+ClericFlameFire         strike3
+ClericFlameExplode      strike1
+ClericFlameCircle       firedhit
+$limit ClericFlameFire 0
+$limit ClericFlameExplode 0
+$limit ClericFlameCircle 0
+
+// frostbite
+MageShardFire           cone3
+MageShardsExplode       shards1b
+$limit MageShardFire 0
+$limit MageShardsExplode 0
+
+// poison sting
+ClericCStaffFire        spell1
+ClericCStaffExplode     glbhit4
+$limit ClericCStaffFire 0
+$limit ClericCStaffExplode 0
+// --- weapons ---
 
 
-// --- start misc ---
-
+// --- misc ---
 misc/healing healing1
 $limit misc/healing1 0
 
 misc/invuse artiuse
 $limit misc/invuse 0
 
+// no limit for platform start/stop
+$limit plats/pt1_strt 0
+$limit plats/pt1_stop 0
+// --- misc ---
+
+
+// --- menu ---
 menu/activate menusel
 menu/backup	menusel
 menu/prompt	menusel
@@ -71,9 +150,4 @@ menu/invalid menusel
 menu/dismiss menumove
 menu/choose menusel
 menu/clear menusel
-
-// no limit for platform start/stop
-$limit plats/pt1_strt 0
-$limit plats/pt1_stop 0
-
-// --- end misc ---
+// --- menu ---

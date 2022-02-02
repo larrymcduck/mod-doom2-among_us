@@ -1,3 +1,31 @@
+## v1.5.0 - 2022.02.02
+### general
+- updated tics of player walking sprites
+- added player sounds
+  - steps
+  - joining/respawning
+  - death
+### weapons
+- Frostbite (new)
+  - rapid firing ice weapon
+- Serpent Staff (new)
+  - imported from Hexen, Cleric's second weapon
+- Fire Storm (new)
+  - imported from Hexen, Cleric's third weapon
+- Black Hole Generator
+  - increase speed of black hole projectile
+- Lightning Gun
+  - increase speed of lightning projectile
+- Redeemer
+  - Warheads are now heat seeking
+- Fists
+  - Update tag to "Fists"
+### powerups
+- updated Double Damage screen tint
+- allow players that are morphed into chickens to pick up items
+### map
+- projectiles and hitscans are blocked by windows in Cafeteria, Weapons and Navigation
+
 ## v1.4 - 2022.01.28
 ### general
 - locking doors in deathmatch game now configurable

@@ -6,6 +6,7 @@ actor AmongUsLightningGun : MWeapLightning
     Weapon.AmmoType "AmongUsCell"
     Tag "Lightning Gun"
     Inventory.PickupMessage "Lightning Gun"
+    +INVENTORY.ALWAYSPICKUP
     States
     {
         Spawn:
@@ -37,52 +38,12 @@ actor AmongUsLightningGun : MWeapLightning
     }
 }
 
-actor ElectroBlast
+actor AmongUsLightningFloor : LightningFloor replaces LightningFloor
 {
-  Radius 13
-  Height 8
-  Speed 25
-  Damage 6
-  Projectile
-  DamageType Disintegrate
-  Scale .75
-  +RANDOMIZE
-  +BLOODLESSIMPACT
-  +NOEXTREMEDEATH
-  RenderStyle Add
-  Alpha 0.75
-  SeeSound "electrogun/shoot"
-  DeathSound "electrogun/hit"
-  Obituary "%o was shocked by %k's electro gun."
-  States
-  {
-  Spawn:
-    EBLT GH 0 bright A_SpawnItem("ElectroBlastTrail")
-    EBLT GH 2 bright A_BishopMissileWeave
-    loop
-  Death:
-    EBLT IJK 3 bright
-    stop
-  }
+  Speed 30
 }
 
-actor ElectroBlastTrail
+actor AmongUsLightningCeiling : LightningCeiling replaces LightningCeiling
 {
-  Radius 13
-  Height 8
-  Speed 20
-  Damage 0
-  Projectile
-  +RANDOMIZE
-  RenderStyle Add
-  Alpha 0.75
-  States
-  {
-  Spawn:
-    EBLT ABC 3 bright A_BishopMissileWeave
-    goto death
-  Death:
-    EBLT DEF 4 bright A_FadeOut(0.5)
-    loop
-  }
+  Speed 30
 }

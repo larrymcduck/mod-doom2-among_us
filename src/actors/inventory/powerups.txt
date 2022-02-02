@@ -65,7 +65,7 @@ actor AmongUsDoubleDamage : AmongUsPowerup
 {
   Powerup.Type PowerDamage
   Inventory.PickupMessage "Double Damage!"
-  Powerup.Color 255 192 0
+  Powerup.Color 255 128 0
 }
 
 actor AmongUsProtection : AmongUsPowerup

@@ -1,0 +1,16 @@
+actor AmongUsFireStorm : CWeapFlame
+{
+  Weapon.AmmoType1 "AmongUsCell"
+  +INVENTORY.ALWAYSPICKUP
+  States
+  {
+    Select:
+      CFLM A 0 A_Raise
+      CFLM A 1 A_Raise
+      Loop
+    Deselect:
+      CFLM A 0 A_Lower
+      CFLM A 1 A_Lower
+      Loop
+  }
+}

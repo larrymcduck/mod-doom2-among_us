@@ -44,6 +44,7 @@ actor WarHead
 	Damage 200
 	Projectile
 	+SKYEXPLODE
+	+SEEKERMISSILE
 	SeeSound "weapons/redeemer"
 	DeathSound "weapons/rocklx"
 	States
@@ -61,10 +62,11 @@ actor WarHead
 
 Actor WarHeadExplosion
 {
-	Scale 2.0
+	Scale 3.0
 	Radius 11
 	Height 8
 	-SOLID
+	RenderStyle Add
    +NOCLIP
    +NOGRAVITY
 	States

@@ -1,4 +1,10 @@
-ACTOR SusPlayer : PlayerPawn
+actor AmongUsChickenPlayer : ChickenPlayer replaces ChickenPlayer
+{
+    +PICKUP
+}
+actor PlayerStepSound : AmongUsDummyInventory99 { }
+
+actor SusPlayer : PlayerPawn
 {
   Speed 1
   Health 100
@@ -7,11 +13,13 @@ ACTOR SusPlayer : PlayerPawn
   Mass 100
   PainChance 255
   Scale 0.6
+  PainSound "SusPlayerPain"
+  Player.SoundClass "susplayer"
   Player.DisplayName "Crewmate"
   Player.WeaponSlot 1, Crewmate, Imposter, AmongUsFist, AmongUsChainsaw
-  Player.WeaponSlot 2, AmongUsPistol, AmongUsM6d
+  Player.WeaponSlot 2, AmongUsPistol, AmongUsM6d, AmongUsSerpentStaff
   Player.WeaponSlot 3, AmongUsShotgun, AmongUsSuperShotgun
-  Player.WeaponSlot 4, AmongUsChaingun
+  Player.WeaponSlot 4, AmongUsChaingun, AmongUsFrostbite, AmongUsFireStorm
   Player.WeaponSlot 5, AmongUsRocketLauncher, M40Rifle
   Player.WeaponSlot 6, AmongUsPlasmaRifle, AmongUsLightningGun, BHGen
   Player.WeaponSlot 7, AmongUsBFG9000, STBFG10K, Redeemer
@@ -23,7 +31,14 @@ ACTOR SusPlayer : PlayerPawn
       AMNG A -1
       Loop
     See:
-      AMNG BCDEFGHIJKLM 2
+      AMNG BCD 2
+      AMNG E 1
+      AMNG F 1 ACS_ExecuteAlways(999)
+      AMNG G 1
+      AMNG HIJ 2
+      AMNG K 1
+      AMNG L 1 ACS_ExecuteAlways(999)
+      AMNG M 1
       Loop
     Missile:
       AMNG QR 6
@@ -36,6 +51,7 @@ ACTOR SusPlayer : PlayerPawn
       AMNG P 8
       Goto Spawn
     Death:
+	  ADED A 0 A_PlayerScream
 	  ADED A 2 A_NoBlocking
       ADED BCDEFGHIJKLMNOPQRSTUVWXYZ 2
       ADEE ABCDEF 2

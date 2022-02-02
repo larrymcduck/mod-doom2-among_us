@@ -1,0 +1,42 @@
+actor AmongUsFrostbite : Weapon
+{
+  Tag "Frostbite"
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 25
+  Weapon.AmmoType "AmongUsCell"
+  +INVENTORY.ALWAYSPICKUP
+  States
+  {
+    Spawn:
+      KSWP A -1
+      Stop
+    Ready:
+      KSAW ABCB 4 A_WeaponReady
+      Loop
+    Select:
+      KSAW A 0 A_Raise
+      KSAW A 1 A_Raise
+      Loop
+    Deselect:
+      KSAW A 0 A_Lower
+      KSAW A 1 A_Lower
+      Loop
+    Fire:
+      KSAW A 0 A_GunFlash
+      KSAW D 4 Bright A_FireCustomMissile("AmongUsFrostMissile")
+      KSAW A 0 A_GunFlash
+      KSAW E 4 Bright A_FireCustomMissile("AmongUsFrostMissile")
+      KSAW A 0 A_ReFire
+      KSAW A 0 A_GunFlash
+      KSAW F 3 Bright A_FireCustomMissile("AmongUsFrostMissile")
+      KSAW GH 3 Bright
+      KSAW I 3
+      Goto Ready
+  }
+}
+
+actor AmongUsFrostMissile : FrostMissile
+{
+    Damage 2
+    SeeSound "MageShardFire"
+}
