@@ -1,3 +1,7 @@
+## v1.6.0 - 2022.02.03
+### general
+- added 3d model for player
+
 ## v1.5.0 - 2022.02.02
 ### general
 - updated tics of player walking sprites

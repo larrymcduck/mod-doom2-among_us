@@ -37,3 +37,86 @@ Model AmongUsRandomInventory
     Rotating
     FrameIndex RAND D 0 0
 }
+
+Model SusPlayer
+{
+    Path "models/player"
+    Model 0 "player.md2"
+    Skin 0 "player.png"
+    Scale 90.0 90.0 125.0
+    FrameIndex AMNG A 0 0
+    FrameIndex AMNG B 0 1
+    FrameIndex AMNG C 0 2
+    FrameIndex AMNG D 0 3
+    FrameIndex AMNG E 0 4
+    FrameIndex AMNG F 0 5
+    FrameIndex AMNG G 0 6
+    FrameIndex AMNG H 0 7
+    FrameIndex AMNG I 0 8
+    FrameIndex AMNG J 0 9
+    FrameIndex AMNG K 0 10
+    FrameIndex AMNG L 0 11
+    FrameIndex AMNG M 0 12
+    FrameIndex AMNG P 0 13
+}
+
+Model SusPlayer
+{
+    Path "models/player"
+    Model 0 "playershoot.md2"
+    Skin 0 "player.png"
+    Scale 90.0 90.0 125.0
+    FrameIndex AMNG N 0 0
+    FrameIndex AMNG O 0 1
+}
+
+Model SusPlayer
+{
+    Path "models/player"
+    Model 0 "playerpunch.md2"
+    Skin 0 "player.png"
+    Scale 90.0 90.0 125.0
+    FrameIndex AMNG Q 0 0
+    FrameIndex AMNG R 0 1
+}
+
+Model SusPlayer
+{
+    Path "models/player"
+    Model 0 "playerdead.md2"
+    Skin 0 "playerdead.png"
+    Scale 90.0 90.0 125.0
+    FrameIndex ADED A 0 0
+    FrameIndex ADED B 0 1
+    FrameIndex ADED C 0 2
+    FrameIndex ADED D 0 3
+    FrameIndex ADED E 0 4
+    FrameIndex ADED F 0 5
+    FrameIndex ADED G 0 6
+    FrameIndex ADED H 0 7
+    FrameIndex ADED I 0 8
+    FrameIndex ADED J 0 9
+    FrameIndex ADED K 0 10
+    FrameIndex ADED L 0 11
+    FrameIndex ADED M 0 12
+    FrameIndex ADED N 0 13
+    FrameIndex ADED O 0 14
+    FrameIndex ADED P 0 15
+    FrameIndex ADED Q 0 16
+    FrameIndex ADED R 0 17
+    FrameIndex ADED S 0 18
+    FrameIndex ADED T 0 19
+    FrameIndex ADED U 0 20
+    FrameIndex ADED V 0 21
+    FrameIndex ADED W 0 22
+    FrameIndex ADED X 0 23
+    FrameIndex ADED Y 0 24
+    FrameIndex ADED Z 0 25
+    FrameIndex ADEE A 0 26
+    FrameIndex ADEE B 0 27
+    FrameIndex ADEE C 0 28
+    FrameIndex ADEE D 0 29
+    FrameIndex ADEE E 0 30
+    FrameIndex ADEE F 0 31
+    FrameIndex ADEE G 0 32
+}

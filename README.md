@@ -8,13 +8,11 @@
 ### Among Us
 - Home page: https://innersloth.com/gameAmongUs.php
 - Any resources (textures, sprites, etc) from the Among Us game are owned by Innersloth
-### Doom 2
+### Doom / Doom 2
 - https://en.wikipedia.org/wiki/Doom_II
-- Any resources (textures, sprites, etc) from the Doom 2 game are owned by id
-### Hexen
-- Any resources (textures, sprites, etc) from the Hexen game are owned by Raven
-### Heretic
-- Any resources (textures, sprites, etc) from the Heretic game are owned by Raven
+- Any resources (textures, sprites, etc) from these games are owned by id
+### Heretic / Hexen
+- Any resources (textures, sprites, etc) from these games are owned by Raven
 
 ### Weapons
 #### Halo M6D Pistol
@@ -35,3 +33,7 @@
 ### Decorations
 #### Garden Trees
 - https://www.realm667.com/index.php/en/prop-stop-mainmenu-163-64831/vegetation-mainmenu-165-65318/1116-garden-trees
+
+### 3D Models
+#### Among Us Character
+- https://sketchfab.com/3d-models/among-us-character-c153f5c9971b49e58a28872b53244dba
