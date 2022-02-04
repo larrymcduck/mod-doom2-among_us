@@ -40,3 +40,5 @@
   - https://sketchfab.com/3d-models/among-us-character-c153f5c9971b49e58a28872b53244dba
 - pistol gun flash
   - https://www.kindpng.com/imgv/iwhTbo_marine-invertebrates-png-download-transparent-background-muzzle-flash/
+- shotgun
+  - https://www.cgtrader.com/items/2501312/download-page
