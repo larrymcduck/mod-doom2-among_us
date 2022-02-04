@@ -36,4 +36,7 @@
 
 ### 3D Models
 #### Among Us Character
-- https://sketchfab.com/3d-models/among-us-character-c153f5c9971b49e58a28872b53244dba
+- base model
+  - https://sketchfab.com/3d-models/among-us-character-c153f5c9971b49e58a28872b53244dba
+- pistol gun flash
+  - https://www.kindpng.com/imgv/iwhTbo_marine-invertebrates-png-download-transparent-background-muzzle-flash/

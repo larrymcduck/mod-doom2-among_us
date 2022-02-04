@@ -120,3 +120,15 @@ Model SusPlayer
     FrameIndex ADEE F 0 31
     FrameIndex ADEE G 0 32
 }
+
+Model SusPlayer
+{
+    Path "models/player"
+    Model 0 "doomshotgun.md2"
+    Skin 0 "player.png"
+    Scale 90.0 90.0 125.0
+    FrameIndex AWS1 A 0 0
+    FrameIndex AWS1 B 0 1
+    FrameIndex AWS1 C 0 2
+    FrameIndex AWS1 D 0 3
+}

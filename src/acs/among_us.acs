@@ -178,3 +178,22 @@ script 999 (void)
     PlaySound(0, playerStepSound, CHAN_BODY, 0.3);
   }
 }
+
+script 998 (void)
+{
+  str shootingState = "Shooting";
+  if (CheckWeapon("AmongUsFist"))
+  {
+    shootingState = "Punching";
+  }
+  if (CheckWeapon("AmongUsPistol") && CheckInventory("AmongUsClip") >= 1)
+  {
+    shootingState = "DoomPistol";
+  }
+  if (CheckWeapon("AmongUsShotgun") && CheckInventory("AmongUsShell") >= 1)
+  {
+    shootingState = "DoomShotgun";
+  }
+
+  SetActorState(0, shootingState, TRUE);
+}

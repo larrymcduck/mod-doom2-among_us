@@ -1,3 +1,9 @@
+## v1.6.1 - 2022.02.04
+### general
+- updated 3d model for player
+  - updated shooting pistol
+  - added Doom Shotgun model
+
 ## v1.6.0 - 2022.02.03
 ### general
 - added 3d model for player

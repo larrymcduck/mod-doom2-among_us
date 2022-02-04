@@ -40,13 +40,6 @@ actor SusPlayer : PlayerPawn
       AMNG L 1 ACS_ExecuteAlways(999)
       AMNG M 1
       Loop
-    Missile:
-      AMNG QR 6
-      Goto Spawn
-    Melee:
-      AMNG O 2 Bright
-      AMNG N 16
-      Goto Spawn
     Pain:
       AMNG P 8
       Goto Spawn
@@ -57,5 +50,27 @@ actor SusPlayer : PlayerPawn
       ADEE ABCDEF 2
       ADEE G -1
       Stop
+    Missile:
+      AMNG A 0 ACS_ExecuteAlways(998)
+    Punching:
+      AMNG QR 4
+      AMNG Q 8
+      Goto Spawn
+    Shooting:
+      AMNG O 2 Bright
+      AMNG N 16
+      Goto Spawn
+    DoomPistol:
+      AMNG N 4
+      AMNG O 2 Bright
+      AMNG N 9
+      Goto Spawn
+    DoomShotgun:
+      AWS1 A 3
+      AWS1 B 7 Bright
+      AWS1 AC 5
+      AWS1 D 4
+      AWS1 CAAA 5
+      Goto Spawn
   }
 }
