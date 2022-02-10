@@ -20,6 +20,7 @@ statusbar fullscreen, fullscreenoffsets, forcescaled
 
 		gamemode deathmatch
 		{
+		    drawimage "impkill2", -50, 2;
 			drawnumber 2, AMONG_US_NUM, untranslated, frags, drawshadow, -3, 1;
 		}
 		gamemode singleplayer, cooperative, teamgame
@@ -94,6 +95,7 @@ statusbar normal, fullscreenoffsets, forcescaled
 
 		gamemode deathmatch
 		{
+		    drawimage "impkill2", -50, 2;
 			drawnumber 2, AMONG_US_NUM, untranslated, frags, drawshadow, -3, 1;
 		}
 		gamemode singleplayer, cooperative, teamgame

@@ -66,11 +66,15 @@ actor SusPlayer : PlayerPawn
       AMNG N 9
       Goto Spawn
     DoomShotgun:
-      AWS1 A 3
-      AWS1 B 7 Bright
-      AWS1 AC 5
-      AWS1 D 4
-      AWS1 CAAA 5
+      AWS1 A 2
+      AWS1 B 4 Bright
+      AWS1 A 4
+      AWS1 CDEDC 5
+      AWS1 AA 5
+      Goto Spawn
+    HaloPistol:
+      AWS2 B 2 Bright
+      AWS2 AAAAA 2
       Goto Spawn
   }
 }

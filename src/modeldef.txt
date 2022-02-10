@@ -1,9 +1,44 @@
+// --------------- decor ---------------
+
+Model AmongUsSecurityCamera
+{
+  Path "models/decor/securitycam"
+  Model 0 "securitycam.md2"
+  Skin 0 "cam.png"
+  Scale 0.005 0.005 0.005
+  FrameIndex ACAM A 0 0
+}
+
+// --------------- projectiles ---------------
+
+Model Rocket
+{
+  Path "models/projectiles/rocket"
+  Model 0 "rocket.md2"
+  Skin 0 "rocket.png"
+  Scale 12.0 12.0 12.0
+  PITCHFROMMOMENTUM
+  FrameIndex MISL A 0 0
+}
+
+Model WarHead
+{
+  Path "models/projectiles/warhead"
+  Model 0 "warhead.md2"
+  Skin 0 "warhead.png"
+  Scale 12.0 12.0 12.0
+  PITCHFROMMOMENTUM
+  FrameIndex FX04 A 0 0
+}
+
+// --------------- random pickups ---------------
+
 Model AmongUsRandomWeapon
 {
     Path "models/inventory/pickup"
     Model 0 "block.md2"
     Skin 0 "yellow.png"
-    Scale 15.0 15.0 15.0
+    Scale 15.0 15.0 18.0
     Rotating
     FrameIndex RAND B 0 0
 }
@@ -13,7 +48,7 @@ Model AmongUsRandomAmmo
     Path "models/inventory/pickup"
     Model 0 "block.md2"
     Skin 0 "brown.png"
-    Scale 15.0 15.0 15.0
+    Scale 15.0 15.0 18.0
     Rotating
     FrameIndex RAND C 0 0
 }
@@ -23,7 +58,7 @@ Model AmongUsRandomPowerup
     Path "models/inventory/pickup"
     Model 0 "block.md2"
     Skin 0 "red.png"
-    Scale 15.0 15.0 15.0
+    Scale 15.0 15.0 18.0
     Rotating
     FrameIndex RAND A 0 0
 }
@@ -33,17 +68,129 @@ Model AmongUsRandomInventory
     Path "models/inventory/pickup"
     Model 0 "block.md2"
     Skin 0 "blue.png"
-    Scale 15.0 15.0 15.0
+    Scale 15.0 15.0 18.0
     Rotating
     FrameIndex RAND D 0 0
 }
+
+
+// --------------- weapons (pickup) ---------------
+
+Model AmongUsM6d
+{
+   Path "models/weapons/halopistol"
+   Model 0 "pistol.md2"
+   Skin 0 "pistol.png"
+   Scale 36.0 36.0 36.0
+   Rotating
+   FrameIndex M6DP A 0 0
+}
+
+Model M40Rifle
+{
+   Path "models/weapons/sniperrifle"
+   Model 0 "sniperrifle.md2"
+   Skin 0 "gun1.png"
+   Scale 15.0 15.0 15.0
+   Rotating
+   FrameIndex SNPP A 0 0
+}
+
+Model AmongUsFireStorm
+{
+   Path "models/weapons/firestorm"
+   Model 0 "firestorm.md2"
+   Skin 0 "firestorm.png"
+   Scale 0.6 0.6 0.6
+   Rotating
+   FrameIndex WCFM A 0 0
+   FrameIndex WCFM B 0 0
+   FrameIndex WCFM C 0 0
+   FrameIndex WCFM D 0 0
+   FrameIndex WCFM E 0 0
+   FrameIndex WCFM F 0 0
+   FrameIndex WCFM G 0 0
+   FrameIndex WCFM H 0 0
+}
+
+Model AmongUsBFG9000
+{
+   Path "models/weapons/bfg9000"
+   Model 0 "W-BFG.dmd"
+   Skin 0 "Gbfg.pcx"
+   Scale 1.0 1.0 1.0
+   Rotating
+   FrameIndex BFUG A 0 0
+}
+
+Model AmongUsChaingun
+{
+   Path "models/weapons/chaingun"
+   Model 0 "W-Chaingun.dmd"
+   Skin 0 "GChain.pcx"
+   Scale 1.0 1.0 1.0
+   Rotating
+   FrameIndex MGUN A 0 0
+}
+
+Model AmongUsChainsaw
+{
+   Path "models/weapons/chainsaw"
+   Model 0 "W-Chainsaw.dmd"
+   Skin 0 "Gsaw.pcx"
+   Scale 1.0 1.0 1.0
+   Rotating
+   FrameIndex CSAW A 0 0
+}
+
+Model AmongUsPlasmaRifle
+{
+   Path "models/weapons/plasmarifle"
+   Model 0 "W-PlasmaRifle.dmd"
+   Skin 0 "Gplasma.pcx"
+   Scale 1.0 1.0 1.0
+   Rotating
+   FrameIndex PLAS A 0 0
+}
+
+Model AmongUsRocketLauncher
+{
+   Path "models/weapons/rocketlauncher"
+   Model 0 "W-RocketLauncher.dmd"
+   Skin 0 "Grocketlnchr.pcx"
+   Scale 1.0 1.0 1.0
+   Rotating
+   FrameIndex LAUN A 0 0
+}
+
+Model AmongUsShotgun
+{
+   Path "models/weapons/shotgun"
+   Model 0 "W-Shotgun.dmd"
+   Skin 0 "Gshotgun.pcx"
+   Scale 1.0 1.0 1.0
+   Rotating
+   FrameIndex SHOT A 0 0
+}
+
+Model AmongUsSuperShotgun
+{
+   Path "models/weapons/supershotgun"
+   Model 0 "W-SuperShotgun.md2"
+   Skin 0 "shoyt.pcx"
+   Scale 0.1 0.1 0.1
+   Rotating
+   FrameIndex SGN2 A 0 0
+}
+
+// --------------- player ---------------
 
 Model SusPlayer
 {
     Path "models/player"
     Model 0 "player.md2"
     Skin 0 "player.png"
-    Scale 90.0 90.0 125.0
+    Scale 80.0 80.0 115.0
     FrameIndex AMNG A 0 0
     FrameIndex AMNG B 0 1
     FrameIndex AMNG C 0 2
@@ -65,7 +212,7 @@ Model SusPlayer
     Path "models/player"
     Model 0 "playershoot.md2"
     Skin 0 "player.png"
-    Scale 90.0 90.0 125.0
+    Scale 80.0 80.0 115.0
     FrameIndex AMNG N 0 0
     FrameIndex AMNG O 0 1
 }
@@ -75,7 +222,7 @@ Model SusPlayer
     Path "models/player"
     Model 0 "playerpunch.md2"
     Skin 0 "player.png"
-    Scale 90.0 90.0 125.0
+    Scale 80.0 80.0 115.0
     FrameIndex AMNG Q 0 0
     FrameIndex AMNG R 0 1
 }
@@ -85,7 +232,7 @@ Model SusPlayer
     Path "models/player"
     Model 0 "playerdead.md2"
     Skin 0 "playerdead.png"
-    Scale 90.0 90.0 125.0
+    Scale 80.0 80.0 115.0
     FrameIndex ADED A 0 0
     FrameIndex ADED B 0 1
     FrameIndex ADED C 0 2
@@ -126,9 +273,20 @@ Model SusPlayer
     Path "models/player"
     Model 0 "doomshotgun.md2"
     Skin 0 "player.png"
-    Scale 90.0 90.0 125.0
+    Scale 80.0 80.0 115.0
     FrameIndex AWS1 A 0 0
     FrameIndex AWS1 B 0 1
     FrameIndex AWS1 C 0 2
     FrameIndex AWS1 D 0 3
+    FrameIndex AWS1 E 0 4
+}
+
+Model SusPlayer
+{
+    Path "models/player"
+    Model 0 "playermd6.md2"
+    Skin 0 "player.png"
+    Scale 80.0 80.0 115.0
+    FrameIndex AWS2 A 0 0
+    FrameIndex AWS2 B 0 1
 }

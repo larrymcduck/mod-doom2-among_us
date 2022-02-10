@@ -45,7 +45,7 @@ Actor DMBall
 {
   Radius 13
   Height 8
-  Speed 25
+  Speed 17
   Damage 10
   Projectile
   +RIPPER

@@ -9,6 +9,7 @@ actor  AmongUsM6d : Weapon
 	+Weapon.NoAlert
     +INVENTORY.ALWAYSPICKUP
 	attacksound "weapons/m6dfire"
+  Inventory.PickupMessage "M6D Pistol"
 	Decal BulletChip
 	States
 	{

@@ -1,3 +1,28 @@
+## v1.7.0 - 2022.02.10
+### general
+- only play step sounds while pressing movement keys
+- added title music
+- add kills icon in HUD
+- 3d models
+  - slightly increase height of ? boxes
+  - slightly scaled player down 
+  - added security camera
+### weapons
+- added hires hud sprite for Redeemer
+- added pickup message for Frostbite
+- revert Black Hole Generator projectile speed
+- fix random weapon pick up
+- remove duplicate Fists files
+- 3d models
+  - Doom weapons
+    - added weapon pickups
+    - updated player shotgun
+  - added player Halo Pistol and pickup
+  - added sniper rifle pickup
+  - added firestorm pickup
+  - added Rocket projectile
+  - added Warhead projectile
+
 ## v1.6.1 - 2022.02.04
 ### general
 - updated 3d model for player

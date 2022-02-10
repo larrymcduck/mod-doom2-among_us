@@ -35,10 +35,16 @@
 - https://www.realm667.com/index.php/en/prop-stop-mainmenu-163-64831/vegetation-mainmenu-165-65318/1116-garden-trees
 
 ### 3D Models
-#### Among Us Character
-- base model
-  - https://sketchfab.com/3d-models/among-us-character-c153f5c9971b49e58a28872b53244dba
-- pistol gun flash
-  - https://www.kindpng.com/imgv/iwhTbo_marine-invertebrates-png-download-transparent-background-muzzle-flash/
-- shotgun
-  - https://www.cgtrader.com/items/2501312/download-page
+#### Among Us Character base model
+- https://sketchfab.com/3d-models/among-us-character-c153f5c9971b49e58a28872b53244dba
+#### Pistol Gun Flash
+- https://www.kindpng.com/imgv/iwhTbo_marine-invertebrates-png-download-transparent-background-muzzle-flash/
+#### Shotgun
+- https://www.cgtrader.com/items/2501312/download-page
+#### Halo Pistol
+- https://www.models-resource.com/pc_computer/halocombatevolved/model/132/
+#### Sniper Rifle
+- https://www.models-resource.com/xbox_360/deadrising/model/8547/
+#### Rocket/Warhead projectile texture
+- https://stock.adobe.com/hu/search?k=brown+metal+texture&asset_id=287698512
+- https://en.wikipedia.org/wiki/Rocket#/media/File:Soyuz_TMA-9_launch.jpg

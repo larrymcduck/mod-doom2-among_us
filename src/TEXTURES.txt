@@ -1,0 +1,39 @@
+sprite PHNXA0, 1071, 524
+{
+  xscale 5.33
+  yscale 5.33
+  offset -741, -549
+  patch PHNXA0, 0, 0
+}
+
+sprite PHNXB0, 1071, 524
+{
+  xscale 5.33
+  yscale 5.33
+  offset -853, -730
+  patch PHNXA0, 0, 0
+}
+
+sprite PHNXC0, 1071, 524
+{
+  xscale 5.33
+  yscale 5.33
+  offset -832, -688
+  patch PHNXA0, 0, 0
+}
+
+sprite PHNXD0, 1071, 524
+{
+  xscale 5.33
+  yscale 5.33
+  offset -789, -624
+  patch PHNXA0, 0, 0
+}
+
+sprite PHNXE0, 1071, 524
+{
+  xscale 5.33
+  yscale 5.33
+  offset -757, -576
+  patch PHNXA0, 0, 0
+}

@@ -5,6 +5,7 @@ actor AmongUsFrostbite : Weapon
   Weapon.AmmoGive 25
   Weapon.AmmoType "AmongUsCell"
   +INVENTORY.ALWAYSPICKUP
+  Inventory.PickupMessage "Frostbite"
   States
   {
     Spawn:

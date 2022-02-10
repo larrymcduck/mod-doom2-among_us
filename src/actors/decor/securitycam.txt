@@ -1,0 +1,15 @@
+actor AmongUsSecurityCamera 10010
+{
+  Tag "Security Camera"
+  Radius 8
+  Height 8
+  -SOLID
+  +NOGRAVITY
+  +SPAWNCEILING
+  States
+  {
+    Spawn:
+      ACAM A -1
+      Stop
+  }
+}

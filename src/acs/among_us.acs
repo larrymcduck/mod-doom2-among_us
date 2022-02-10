@@ -1,8 +1,8 @@
 #library "among_us"
 #include "zcommon.acs"
 
-int weapon_count = 14;
-str random_weapon[14] = {
+int weapon_count = 15;
+str random_weapon[15] = {
   "AmongUsChainsaw",
   "AmongUsShotgun",
   "AmongUsSuperShotgun",
@@ -15,8 +15,9 @@ str random_weapon[14] = {
   "Redeemer",
   "M40Rifle",
   "AmongUsLightningGun",
-  "AmongUsFirebolt",
-  "AmongUsFrostbite"
+  "AmongUsFireStorm",
+  "AmongUsFrostbite",
+  "AmongUsSerpentStaff"
 };
 
 int ammo_count = 11;
@@ -173,7 +174,7 @@ script 999 (void)
       break;
   }
 
-  if ((GetActorZ(0) - GetActorFloorZ(0)) == 0.0)
+  if ((GetActorZ(0) - GetActorFloorZ(0)) == 0.0 && !(GetPlayerInput(-1, INPUT_BUTTONS) & (BT_FORWARD | BT_BACK | BT_MOVELEFT | BT_MOVERIGHT)))
   {
     PlaySound(0, playerStepSound, CHAN_BODY, 0.3);
   }
@@ -193,6 +194,10 @@ script 998 (void)
   if (CheckWeapon("AmongUsShotgun") && CheckInventory("AmongUsShell") >= 1)
   {
     shootingState = "DoomShotgun";
+  }
+  if (CheckWeapon("AmongUsM6d") && CheckInventory("AmongUsClip") >= 1)
+  {
+    shootingState = "HaloPistol";
   }
 
   SetActorState(0, shootingState, TRUE);
